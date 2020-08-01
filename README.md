@@ -1,3 +1,3 @@
 # BootomSheetDatePicker
 Date Picker using Bottom Sheet Dialog
-<img src="1.png">
+<img src="1.png" width="200">
