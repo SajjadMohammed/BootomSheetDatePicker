@@ -25,10 +25,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:fontFamily="@font/monadi"
             android:padding="10dp"
-            android:text="اختر تاريخ ميلادك"
+            android:text="Choose your BOD"
             android:textColor="@color/titleColor"
             android:textSize="18sp" />
 
@@ -37,12 +37,12 @@
             android:layout_width="72dp"
             android:layout_height="38dp"
             android:layout_marginStart="5dp"
-            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/ok_style"
             android:fontFamily="@font/questv_regular"
-            android:text="تم"
+            android:text="ok"
             android:textColor="@color/itemStroke" />
 
     </RelativeLayout>
@@ -60,7 +60,7 @@
             android:fontFamily="@font/questv_regular"
             android:gravity="center"
             android:padding="10dp"
-            android:text="السنة"
+            android:text="day"
             android:textColor="@color/subTitleColor" />
 
         <TextView
@@ -70,8 +70,9 @@
             android:fontFamily="@font/questv_regular"
             android:gravity="center"
             android:padding="10dp"
-            android:text="الشهر"
+            android:text="month"
             android:textColor="@color/subTitleColor" />
+
 
         <TextView
             android:layout_width="0dp"
@@ -80,7 +81,7 @@
             android:fontFamily="@font/questv_regular"
             android:gravity="center"
             android:padding="10dp"
-            android:text="اليوم"
+            android:text="year"
             android:textColor="@color/subTitleColor" />
     </LinearLayout>
 
@@ -90,13 +91,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="3">
-
-        <NumberPicker
-            android:id="@+id/yearPicker"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:theme="@style/NumberPickerTheme" />
 
         <NumberPicker
             android:id="@+id/monthPicker"
@@ -111,6 +105,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:theme="@style/NumberPickerTheme" />
+
+        <NumberPicker
+            android:id="@+id/yearPicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/NumberPickerTheme" />
+
+
     </LinearLayout>
 
 </LinearLayout>
