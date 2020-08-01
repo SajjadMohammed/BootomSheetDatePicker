@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/itemBackgroundColor</item>
+        <!--        text color-->
+        <item name="android:textColorPrimary">@color/subTitleColor</item>
+        <!--        divider color-->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <!--    Bottom Sheet Style and it's model-->
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetModel</item>
+    </style>
+
+    <style name="BottomSheetModel" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_view_background</item>
+        <item name="behavior_peekHeight">282dp</item>
+    </style>
+
+</resources>

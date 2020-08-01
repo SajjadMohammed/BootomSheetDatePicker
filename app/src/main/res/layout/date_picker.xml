@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="282dp"
+    android:background="@drawable/bottom_view_background"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <Button
+        android:layout_width="36dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@drawable/space_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/monadi"
+            android:padding="10dp"
+            android:text="اختر تاريخ ميلادك"
+            android:textColor="@color/titleColor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ok_style"
+            android:fontFamily="@font/questv_regular"
+            android:text="تم"
+            android:textColor="@color/itemStroke" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/questv_regular"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="السنة"
+            android:textColor="@color/subTitleColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/questv_regular"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="الشهر"
+            android:textColor="@color/subTitleColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/questv_regular"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="اليوم"
+            android:textColor="@color/subTitleColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <NumberPicker
+            android:id="@+id/yearPicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/NumberPickerTheme" />
+
+        <NumberPicker
+            android:id="@+id/monthPicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/NumberPickerTheme" />
+
+        <NumberPicker
+            android:id="@+id/dayPicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/NumberPickerTheme" />
+    </LinearLayout>
+
+</LinearLayout>
